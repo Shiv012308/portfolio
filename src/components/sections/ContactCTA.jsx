@@ -29,12 +29,14 @@ export default function ContactCTA() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-10 flex justify-center"
         >
-          <MagneticButton
-            cursorLabel="GO"
-            className="rounded-full bg-black px-8 py-4 font-body text-sm font-semibold uppercase tracking-wider text-off"
-          >
-            Start A Project ↗
-          </MagneticButton>
+          <a href="#contact">
+            <MagneticButton
+              cursorLabel="GO"
+              className="rounded-full bg-black px-8 py-4 font-body text-sm font-semibold uppercase tracking-wider text-off"
+            >
+              Start A Project ↗
+            </MagneticButton>
+          </a>
         </motion.div>
 
         <motion.p

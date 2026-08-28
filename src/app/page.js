@@ -9,7 +9,6 @@ import Hero from "@/components/sections/Hero";
 import Marquee from "@/components/sections/Marquee";
 import Introduction from "@/components/sections/Introduction";
 import Archive from "@/components/sections/Archive";
-import FeaturedWork from "@/components/sections/FeaturedWork";
 import Skills from "@/components/sections/Skills";
 import Tools from "@/components/sections/Tools";
 import About from "@/components/sections/About";
@@ -34,7 +33,6 @@ export default function Home() {
           <Marquee />
           <Introduction />
           <Archive />
-          <FeaturedWork />
           <Skills />
           <Tools />
           <About />

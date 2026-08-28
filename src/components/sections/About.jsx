@@ -9,6 +9,7 @@ const DETAILS = [
   { label: "Specialty", value: "Carousel Post Designing" },
   { label: "Fuel", value: "Music + Tea" },
   { label: "Status", value: "Available for collaborations" },
+  { label: "Experience", value: "2+ years" },
 ];
 
 export default function About() {
@@ -42,9 +43,12 @@ export default function About() {
             style={{ x: springX, y: springY }}
             className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-charcoal grid-lines"
           >
-            <div className="absolute inset-0 flex items-center justify-center font-heading text-2xl font-bold uppercase text-off/20">
-              Portrait
-            </div>
+            {/* Replace the src below with your actual image path (e.g., "/my-portrait.jpg") */}
+            <img 
+              src="/images/myself.jpeg" 
+              alt="Shiv Vishwakarma Portrait" 
+              className="absolute inset-0 h-full w-full object-cover" 
+            />
           </motion.div>
           <span className="absolute -bottom-6 left-6 font-hand text-2xl text-red-bright md:-bottom-8">
             that&apos;s me. ↖
@@ -73,7 +77,7 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-lg font-body text-off/70"
           >
-            I&apos;m a graphic designer who enjoys turning ideas into bold, clean
+            I&apos;m <span className="text-red-bright">Shiv Vishwakarma</span> a graphic designer who enjoys turning ideas into bold, clean
             and memorable visual experiences. I love experimenting with
             typography, color, layouts and digital interfaces while keeping
             every design purposeful.

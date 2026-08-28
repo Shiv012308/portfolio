@@ -6,7 +6,6 @@ import MobileMenu from "@/components/layout/MobileMenu";
 import { Menu } from "lucide-react";
 
 const LINKS = [
-  { label: "Work", href: "#work" },
   { label: "Archive", href: "#archive" },
   { label: "About", href: "#about" },
 ];
@@ -60,6 +59,7 @@ export default function Navbar() {
             <MagneticButton
               cursorLabel="GO"
               className="rounded-full border border-off/30 px-5 py-2 font-body text-xs font-semibold uppercase tracking-wider text-off hover:border-off"
+              onClick={() => window.open("https://wa.me/919302324481", "_blank", "noopener,noreferrer")}
             >
               Let&apos;s Talk ↗
             </MagneticButton>

@@ -67,8 +67,20 @@ export default function FolderCard({ category, onClick }) {
             key={item.id}
             custom={i}
             variants={fanVariants}
-            className="absolute bottom-0 w-[60%] aspect-[3/4] bg-charcoal rounded-md shadow-2xl border border-off/20 overflow-hidden origin-bottom"
-            style={{ zIndex: 10 + i }}
+            style={
+              category.slug === "certificates"
+                ? { zIndex: 10 + i, aspectRatio: "29.7 / 21" }
+                : category.slug === "presentations"
+                ? { zIndex: 10 + i, aspectRatio: "16 / 9" }
+                : { zIndex: 10 + i }
+            }
+            className={`absolute bottom-0 ${
+              category.slug === "certificates"
+                ? "w-[75%] aspect-[29.7/21]"
+                : category.slug === "presentations"
+                ? "w-[70%] aspect-video"
+                : "w-[60%] aspect-[3/4]"
+            } bg-charcoal rounded-md shadow-2xl border border-off/20 overflow-hidden origin-bottom`}
           >
             <div className="relative w-full h-full bg-black">
               {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -3,7 +3,11 @@
 import { motion } from "framer-motion";
 
 const SOCIALS = [
-  { label: "Email", value: "shivvishwakarma1206@gmail.com", href: "shivvishwakarma1206@gmail.com" },
+ {
+    label: "Email",
+    value: "shivvishwakarma1206@gmail.com",
+    href: "mailto:shivvishwakarma1206@gmail.com",
+  },
   { label: "LinkedIn", value: "in/Shiv Vishwakarma", href: "https://www.linkedin.com/in/shiv-vishwakarma-3951a4380/" },
   { label: "WhatsApp", value: "@shiv_iv", href: "whatsapp://send?phone=+919302324481" },
 ];

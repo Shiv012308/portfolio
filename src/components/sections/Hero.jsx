@@ -101,18 +101,14 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="mt-10 flex flex-wrap gap-4"
         >
-          <MagneticButton
-            cursorLabel="GO"
-            className="rounded-full bg-off px-7 py-3 font-body text-sm font-semibold uppercase tracking-wider text-black"
-          >
-            View My Work ↓
-          </MagneticButton>
-          <MagneticButton
-            cursorLabel="GO"
-            className="rounded-full border border-off/30 px-7 py-3 font-body text-sm font-semibold uppercase tracking-wider text-off"
-          >
-            Let&apos;s Create ↗
-          </MagneticButton>
+          <a href="#archive">
+            <MagneticButton
+              cursorLabel="GO"
+              className="rounded-full bg-off px-7 py-3 font-body text-sm font-semibold uppercase tracking-wider text-black"
+            >
+              View My Work ↓
+            </MagneticButton>
+          </a>
         </motion.div>
       </div>
     </section>

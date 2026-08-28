@@ -23,7 +23,7 @@ export default function Footer() {
 
           <nav className="flex flex-wrap gap-6 font-body text-xs uppercase tracking-widest text-off/50">
             <a href="#top" className="hover:text-off">Home</a>
-            <a href="#work" className="hover:text-off">Work</a>
+            <a href="#archive" className="hover:text-off">Work</a>
             <a href="#about" className="hover:text-off">About</a>
             <a href="#contact" className="hover:text-off">Contact</a>
           </nav>
