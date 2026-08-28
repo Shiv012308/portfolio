@@ -24,7 +24,7 @@ export default function Archive() {
           Archive.
         </motion.h2>
         <p className="mt-4 font-body text-off/60 max-w-md">
-          Hover to peek inside. Click to open the folder and explore the works. Replace the demo placeholders with your original creations.
+          Explore a curated archive of my design work spanning brand identities, visual systems, and digital art. Hover over any folder for a quick preview, or click to dive into the full showcase.
         </p>
       </div>
 
