@@ -26,9 +26,10 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: loaded ? 1 : 0 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        className="w-full max-w-full overflow-x-hidden"
       >
         <Navbar />
-        <main>
+        <main className="w-full max-w-full overflow-x-hidden">
           <Hero />
           <Marquee />
           <Introduction />

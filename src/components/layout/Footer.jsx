@@ -4,14 +4,14 @@ import { ArrowUp } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-off/10 bg-black px-6 pb-8 pt-20 md:px-10">
+    <footer className="border-t border-off/10 bg-black px-4 sm:px-6 pb-8 pt-16 md:pt-20 md:px-10 overflow-hidden w-full max-w-full">
       <div className="mx-auto max-w-7xl">
-        <h2 className="font-heading text-4xl font-extrabold uppercase leading-[0.95] tracking-tight md:text-7xl">
+        <h2 className="font-heading text-3xl sm:text-4xl md:text-7xl font-extrabold uppercase leading-[0.95] tracking-tight break-words">
           Thanks For
           <br />
           Scrolling.
         </h2>
-        <p className="mt-4 font-hand text-2xl text-grey">
+        <p className="mt-3 sm:mt-4 font-hand text-xl sm:text-2xl text-grey">
           you&apos;ve officially seen too many pixels.
         </p>
 

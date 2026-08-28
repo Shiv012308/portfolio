@@ -38,7 +38,7 @@ export default function FolderCard({ category, onClick }) {
   return (
     <motion.div
       onClick={onClick}
-      className="group relative cursor-pointer w-full aspect-[4/3] max-w-[320px] mx-auto perspective-[1200px]"
+      className="group relative cursor-pointer w-full aspect-[4/3] max-w-[285px] sm:max-w-[320px] mx-auto perspective-[1200px]"
       whileHover="hover"
       initial="initial"
     >

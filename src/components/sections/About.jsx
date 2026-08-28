@@ -28,8 +28,8 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="bg-black px-6 py-28 md:px-10 md:py-40">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-16 md:grid-cols-2 md:items-center">
+    <section id="about" className="bg-black px-4 sm:px-6 py-20 md:px-10 md:py-40 overflow-hidden w-full max-w-full">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:gap-16 md:grid-cols-2 md:items-center">
         <motion.div
           ref={ref}
           onMouseMove={handleMove}
@@ -37,11 +37,11 @@ export default function About() {
             x.set(0);
             y.set(0);
           }}
-          className="relative"
+          className="relative max-w-sm sm:max-w-md mx-auto md:mx-0 w-full"
         >
           <motion.div
             style={{ x: springX, y: springY }}
-            className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-2xl bg-charcoal grid-lines"
+            className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-charcoal grid-lines"
           >
             {/* Replace the src below with your actual image path (e.g., "/my-portrait.jpg") */}
             <img 
@@ -50,7 +50,7 @@ export default function About() {
               className="absolute inset-0 h-full w-full object-cover" 
             />
           </motion.div>
-          <span className="absolute -bottom-6 left-6 font-hand text-2xl text-red-bright md:-bottom-8">
+          <span className="absolute -bottom-6 left-6 font-hand text-xl sm:text-2xl text-red-bright md:-bottom-8">
             that&apos;s me. ↖
           </span>
         </motion.div>
@@ -61,7 +61,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="font-heading text-4xl font-extrabold uppercase leading-[0.95] tracking-tight md:text-6xl"
+            className="font-heading text-3xl sm:text-4xl md:text-6xl font-extrabold uppercase leading-[0.95] tracking-tight break-words"
           >
             The Human
             <br />

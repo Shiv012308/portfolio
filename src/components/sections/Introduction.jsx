@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 export default function Introduction() {
   return (
-    <section className="bg-black px-6 py-28 md:px-10 md:py-40">
+    <section className="bg-black px-6 py-20 md:px-10 md:py-40 overflow-hidden w-full max-w-full">
       <div className="mx-auto max-w-7xl">
         <motion.p
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-6 font-body text-sm uppercase tracking-[0.3em] text-grey"
+          className="mb-4 sm:mb-6 font-body text-xs sm:text-sm uppercase tracking-[0.3em] text-grey"
         >
           01 / Intro
         </motion.p>
@@ -21,7 +21,7 @@ export default function Introduction() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-4xl font-heading text-5xl font-extrabold leading-[0.95] tracking-tight md:text-8xl"
+          className="max-w-4xl font-heading text-4xl sm:text-6xl md:text-8xl font-extrabold leading-[0.95] tracking-tight break-words"
         >
           I TURN IDEAS INTO PREMIUM VISUALS.
         </motion.h2>

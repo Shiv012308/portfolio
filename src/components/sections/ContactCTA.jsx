@@ -5,7 +5,7 @@ import MagneticButton from "@/components/ui/MagneticButton";
 
 export default function ContactCTA() {
   return (
-    <section className="relative overflow-hidden bg-red px-6 py-28 text-off md:px-10 md:py-40">
+    <section className="relative overflow-hidden bg-red px-4 sm:px-6 py-20 text-off md:px-10 md:py-40 w-full max-w-full">
       <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-off/10 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-black/10 blur-3xl" />
 
@@ -15,7 +15,7 @@ export default function ContactCTA() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="font-heading text-4xl font-extrabold uppercase leading-[0.95] tracking-tight md:text-7xl"
+          className="font-heading text-3xl sm:text-5xl md:text-7xl font-extrabold uppercase leading-[0.95] tracking-tight break-words"
         >
           Got An Idea?
           <br />

@@ -21,6 +21,12 @@ const caveat = Caveat({
   weight: ["500", "600", "700"],
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata = {
   title: "Shiv  — Graphic Designer",
   description:
@@ -29,8 +35,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${syne.variable} ${manrope.variable} ${caveat.variable}`}>
-      <body className="bg-black text-off font-body antialiased selection:bg-red selection:text-off">
+    <html lang="en" className={`${syne.variable} ${manrope.variable} ${caveat.variable} overflow-x-hidden max-w-full`}>
+      <body className="bg-black text-off font-body antialiased selection:bg-red selection:text-off overflow-x-hidden w-full max-w-full min-h-screen">
         <SmoothScroll>
           <CustomCursor />
           {children}

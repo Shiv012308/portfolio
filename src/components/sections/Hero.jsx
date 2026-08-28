@@ -45,7 +45,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="top" ref={sectionRef} className="relative h-screen w-full overflow-hidden bg-black">
+    <section id="top" ref={sectionRef} className="relative h-screen w-full max-w-full overflow-hidden bg-black">
       <div className="absolute inset-0">
         <HeroScene scrollProgress={scrollProgress} />
       </div>
@@ -60,7 +60,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-4 font-body text-sm uppercase tracking-[0.35em] text-off/60"
+          className="mb-3 sm:mb-4 font-body text-xs sm:text-sm uppercase tracking-[0.35em] text-off/60"
         >
           Hello, I&apos;m Shiv
         </motion.p>
@@ -69,7 +69,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="font-heading text-[16vw] font-extrabold leading-[0.9] tracking-tighter md:text-[9vw]"
+          className="font-heading text-[13vw] sm:text-[14vw] md:text-[9vw] font-extrabold leading-[0.9] tracking-tighter break-words"
         >
           GRAPHIC
           <br />

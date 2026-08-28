@@ -32,7 +32,7 @@ function Row({ text, direction = "left", className = "" }) {
 
 export default function Marquee() {
   return (
-    <section className="border-y border-off/10 bg-black py-8">
+    <section className="border-y border-off/10 bg-black py-6 md:py-8 overflow-hidden w-full max-w-full">
       <Row
         text="BRANDING ✦ POSTERS ✦ SOCIAL MEDIA ✦ CAROUSELS ✦ BANNERS ✦ UI DESIGN ✦ LOGOS ✦ TYPOGRAPHY ✦ CREATIVE DIRECTION ✦"
         direction="left"
