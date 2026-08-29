@@ -5,8 +5,6 @@ export const skills = [
   "Typography",
   "Visual Identity",
   "Logo Design",
-  "UI Design",
-  "Motion Design",
   "Illustration",
   "Creative Direction",
 ];

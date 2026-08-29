@@ -38,19 +38,19 @@ export default function Archive() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
             >
-              <FolderCard 
-                category={category} 
-                onClick={() => setActiveCategory(category)} 
+              <FolderCard
+                category={category}
+                onClick={() => setActiveCategory(category)}
               />
             </motion.div>
           ))}
         </div>
       </div>
 
-      <FolderModal 
-        isOpen={!!activeCategory} 
-        category={activeCategory} 
-        onClose={() => setActiveCategory(null)} 
+      <FolderModal
+        isOpen={!!activeCategory}
+        category={activeCategory}
+        onClose={() => setActiveCategory(null)}
       />
     </section>
   );
